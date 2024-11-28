@@ -1,5 +1,4 @@
 #include <Servo.h>
-#include <LiquidCrystal_I2C.h>
 
 #define pin_trigger_pintu_masuk 4
 #define pin_echo_pintu_masuk 5
@@ -9,8 +8,6 @@
 
 bool pintu_masuk_sudah_tertutup = true;
 bool pintu_keluar_sudah_tertutup = true;
-
-LiquidCrystal_I2C lcd(0x27,16,2);
 
 Servo pintu_masuk;  // Create a servo object
 Servo pintu_keluar;
